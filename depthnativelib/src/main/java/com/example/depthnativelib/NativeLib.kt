@@ -17,5 +17,6 @@ class NativeLib {
 }
 
 class depthAiCamera {
+
     external fun prepareCameraJNI(): Unit
 }
