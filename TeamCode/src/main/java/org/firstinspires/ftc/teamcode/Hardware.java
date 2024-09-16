@@ -2,6 +2,7 @@ package org.firstinspires.ftc.teamcode;
 
 import com.acmerobotics.roadrunner.ftc.OverflowEncoder;
 import com.acmerobotics.roadrunner.ftc.RawEncoder;
+import com.qualcomm.hardware.limelightvision.Limelight3A;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.HardwareMap;
@@ -23,6 +24,8 @@ public class Hardware {
     public static OverflowEncoder encoderBottom;
     public static OverflowEncoder encoderLeft;
     public static OverflowEncoder encoderRight;
+
+    public static Limelight3A limeLight;
 
     HardwareMap hardwareMap;
 
@@ -50,5 +53,7 @@ public class Hardware {
         encoderBottom = new OverflowEncoder(new RawEncoder(motorTL));
         encoderLeft = new OverflowEncoder(new RawEncoder(motorTR));
         encoderRight = new OverflowEncoder(new RawEncoder(motorBL));
+
+        limeLight = this.hardwareMap.get(Limelight3A.class, "limelight");
     }
 }

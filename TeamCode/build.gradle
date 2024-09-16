@@ -14,6 +14,7 @@
 // Include common definitions from above.
 apply from: '../build.common.gradle'
 apply from: '../build.dependencies.gradle'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 repositories {
     maven {
@@ -30,10 +31,14 @@ android {
     configurations {
         all*.exclude module: 'gson' // This removes all other versions of `support-v4` if gets duplicated from all the artifacts.
     }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
 }
 
 dependencies {
     implementation project(':FtcRobotController')
+    implementation 'androidx.core:core-ktx:1.13.1'
     annotationProcessor files('lib/OpModeAnnotationProcessor.jar')
     implementation "com.acmerobotics.roadrunner:ftc:0.1.12"
     implementation "com.acmerobotics.roadrunner:core:1.0.0"

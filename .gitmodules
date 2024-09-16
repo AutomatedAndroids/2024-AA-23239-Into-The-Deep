@@ -1,0 +1,10 @@
+[submodule "depthnativelib/src/main/cpp/libusb"]
+	path = depthnativelib/src/main/cpp/libusb
+	url = https://github.com/luxonis/libusb.git
+	branch = cmake-android
+[submodule "depthnativelib/src/main/cpp/depthai-core"]
+	path = depthnativelib/src/main/cpp/depthai-core
+	url = https://github.com/luxonis/depthai-core
+[submodule "depthnativelib/src/main/cpp/opencv"]
+    path = depthnativelib/src/main/cpp/opencv
+    url = ""https://github.com/opencv/opencv.git

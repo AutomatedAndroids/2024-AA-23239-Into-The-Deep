@@ -51,6 +51,26 @@ task copyDashAssets(type: Copy) {
 copyDashAssets.dependsOn cleanDashAssets
 copyDashAssets.dependsOn yarn_build
 
+build {
+    dependsOn yarn_build
+
+    inputs.dir "src"
+    inputs.dir "dash/src"
+    inputs.file "dash/node_modules/yarn-integrity"
+
+    outputs.dir "dash/public"
+
+    outputs.cacheIf {true}
+}
+//yarn_build {
+//    inputs.files fileTree("dash/src")
+//    inputs.files fileTree("src/main/java")
+//
+//    outputs.dir "dash/dist"
+//    outputs.files FileTree("dash/public")
+//
+//    outputs.cacheIf {true}
+//}
 android.libraryVariants.all { variant ->
     variant.preBuildProvider.get().dependsOn copyDashAssets
 }
@@ -69,6 +89,7 @@ task checkstyle(type: Checkstyle) {
     classpath = files()
     ignoreFailures = true
 }
+
 
 // I"d like to replace each() with collectMany() if only I knew how
 // Also, the static suggestion here is wrong but I lack the incantation to suppress it
