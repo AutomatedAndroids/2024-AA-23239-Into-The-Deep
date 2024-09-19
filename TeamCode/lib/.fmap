@@ -1,0 +1,71 @@
+{
+  "type": "ftc",
+  "fiducials": [
+    {
+      "family": "apriltag3_36h11_classic",
+      "id": 1,
+      "size": 101.6,
+      "transform" : [
+        0, 0, 0, 0,
+        0, 0, 0, 0,
+        0, 0, 0, 0
+      ],
+      "unique": 1
+    },
+    {
+      "family": "apriltag3_36h11_classic",
+      "id": 2,
+      "size": 101.6,
+      "transform" : [
+        0, 0, 0, 0,
+        0, 0, 0, 0,
+        0, 0, 0, 0
+      ],
+      "unique": 1
+    },
+    {
+      "family": "apriltag3_36h11_classic",
+      "id": 3,
+      "size": 101.6,
+      "transform" : [
+        0, 0, 0, 0,
+        0, 0, 0, 0,
+        0, 0, 0, 0
+      ],
+      "unique": 1
+    },
+    {
+      "family": "apriltag3_36h11_classic",
+      "id": 4,
+      "size": 101.6,
+      "transform" : [
+        0, 0, 0, 0,
+        0, 0, 0, 0,
+        0, 0, 0, 0
+      ],
+      "unique": 1
+    },
+    {
+      "family": "apriltag3_36h11_classic",
+      "id": 5,
+      "size": 101.6,
+      "transform" : [
+        0, 0, 0, 0,
+        0, 0, 0, 0,
+        0, 0, 0, 0
+      ],
+      "unique": 1
+    },
+    {
+      "family": "apriltag3_36h11_classic",
+      "id": 6,
+      "size": 101.6,
+      "transform" : [
+        0, 0, 0, 0,
+        0, 0, 0, 0,
+        0, 0, 0, 0
+      ],
+      "unique": 1
+    }
+  ]
+}

@@ -11,6 +11,7 @@ apply plugin: "maven-publish"
 apply plugin: "checkstyle"
 
 android {
+    //noinspection GradleDependency
     compileSdkVersion 28
 
     defaultConfig {
@@ -61,6 +62,15 @@ build {
     outputs.dir "dash/public"
 
     outputs.cacheIf {true}
+}
+yarn_build {
+    outputs.dir "dash/dist"
+    outputs.dir "dash/public"
+    outputs.dir "dash/dist/assets"
+}
+yarn_install {
+    inputs.file "dash/yarn.lock"
+    outputs.dir "dash/node_modules"
 }
 //yarn_build {
 //    inputs.files fileTree("dash/src")
