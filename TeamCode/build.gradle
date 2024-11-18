@@ -16,6 +16,8 @@ apply from: '../build.common.gradle'
 apply from: '../build.dependencies.gradle'
 apply plugin: 'org.jetbrains.kotlin.android'
 
+// minor num: 110
+
 repositories {
     maven {
         url = 'https://maven.brott.dev/'
