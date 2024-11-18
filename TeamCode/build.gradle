@@ -16,7 +16,7 @@ apply from: '../build.common.gradle'
 apply from: '../build.dependencies.gradle'
 apply plugin: 'org.jetbrains.kotlin.android'
 
-// minor num: 110
+// minor num: 111
 
 repositories {
     maven {
